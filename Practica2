@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void){
+    int a;
+    float b,c,d;
+    
+    do{
+    printf("Seleccione una opción: \n1. Suma\n2. Resta\n3. Multiplicación\n\n");
+
+    scanf("%d",&a);
+        }while(a<1 || a>4);
+    
+    printf("Ingrese dos números: \n\n");
+    scanf("%f%f",&b,&c);
+    
+    switch(a){
+        case 1:
+            d=b+c;
+        break;
+        case 2:
+            d=b-c;
+        break;
+        case 3:
+            d=b*c;
+        break;
+    }
+ 
+    printf("\nEl resultado de la operación es: %.2f", d);
+        
+}
